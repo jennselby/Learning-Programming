@@ -1,0 +1,38 @@
+[
+  [
+    "Exercises/Games",
+    "Want concrete goals and immediate feedback on whether you succeeded? Try these.",
+    [
+      [
+        "Rosalind",
+        "These bioinformatics problems can be done in any programming language.",
+        "http://rosalind.info/problems/tree-view/",
+        "Intermediate Advanced",
+        "",
+        "Biology"
+      ],
+      [ 
+        "Codecademy",
+        "These courses take you through the basics of a specific programming language or library.",
+        "https://www.codecademy.com/", 
+        "Beginner Intermediate",
+        "HTML CSS JavaScript PHP Python Ruby Java SQL",
+        ""
+      ]
+    ]
+  ],
+  [
+    "Online Courses",
+    "Would you like video lectures and problem sets? Some of these courses also have automatic graders so that you can tell if your code worked.",
+    [
+      [
+        "Harvard's CS50",
+        "This is the intro computer science course, released as a MOOC.",
+        "https://www.edx.org/course/introduction-computer-science-harvardx-cs50x#!",
+        "Beginner Intermediate",
+        "Scratch C PHP JavaScript SQL CSS HTML",
+        "Biology Crytography Finance Forensics Gaming"
+      ]
+    ]
+  ]
+]
