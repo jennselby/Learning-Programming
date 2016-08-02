@@ -54,7 +54,7 @@ def create_html():
         jsondata = json.loads(indata.read())
 
         suggestions_html = '<div class="row">\n\n'
-        suggestions_html = '    <div id="suggestions-list" class="col-md-8 col-md-pull-4">\n'
+        suggestions_html = '    <div id="suggestions-list" class="col-sm-8 col-sm-pull-4">\n'
 
         for category in jsondata:
             cat_name, cat_desc, cat_suggestions = category
@@ -85,7 +85,7 @@ def create_html():
 
         suggestions_html += '        </div>\n'
 
-    filters_html = '    <div id="filters-list" class="col-md-4 col-md-push-8">\n'
+    filters_html = '    <div id="filters-list" class="col-sm-4 col-sm-push-8">\n'
     script += '        var filters = {\n'
     for filter_heading, filter_list in [
             ('Difficulty Level', ['Beginner', 'Intermediate', 'Advanced']),
