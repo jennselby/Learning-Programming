@@ -3,9 +3,8 @@
         }
         .showing {
             color: #555;
-            font-style: normal;
         }
         .filtering {
-            color: #bbb;
-            font-style: italic;
+            color: #777;
+            background-color: #eee;
         }
