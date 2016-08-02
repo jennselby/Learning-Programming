@@ -3,55 +3,290 @@
 
 <head>
     <meta charset='utf-8'>
+    <!-- Links (here and at the bottom)
+         from http://getbootstrap.com/getting-started/ 8/1/16 -->
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+
+    <style>
+        h1 {
+            text-align: center;
+        }
+        .showing {
+            color: #555;
+            font-style: normal;
+        }
+        .filtering {
+            color: #bbb;
+            font-style: italic;
+        }
+
+    </style>
 </head>
 
 <body>
     <h1>Suggestions for Learning Computer Programming</h1>
+        <div id="filters-list" class="col-sm-4 col-sm-push-8">
 
-    <ul id="suggestions-list">
+            <div class="panel panel-primary">
+                <div class="category-item panel-heading">
+                    <div class="panel-heading">
+                        <div class="filter-name panel-title">Filter by Difficulty Level</div>
+                    </div>
+                </div>
+                <div class="panel-body">
+                    <ul class="filter-list list-group" id="DifficultyLevel">
 
-        <li class="category-item">
-            <div class="category-name">Exercises/Games</div>
-            <div class="category-desc">Want concrete goals and immediate feedback on whether you succeeded? Try these.</div>
-            <ul class="category-suggestions-list">
+                        <li class="filter-item list-group-item showing" id="Beginner">Beginner</li>
 
-                <li class="suggestion-item Intermediate Advanced  Biology">
-                    <div class="suggestion-name"><a href="http://rosalind.info/problems/tree-view/">Rosalind</a></div>
-                    <div class="suggestion-desc">These bioinformatics problems can be done in any programming language.</div>
-                    <div class="suggestion-levels">Levels: Intermediate Advanced</div>
-                    <div class="suggestion-languages">Languages: </div>
-                    <div class="suggestions-subjects">Topics: Biology</div>
-                </li>
+                        <li class="filter-item list-group-item showing" id="Intermediate">Intermediate</li>
 
-                <li class="suggestion-item Beginner Intermediate HTML CSS JavaScript PHP Python Ruby Java SQL ">
-                    <div class="suggestion-name"><a href="https://www.codecademy.com/">Codecademy</a></div>
-                    <div class="suggestion-desc">These courses take you through the basics of a specific programming language or library.</div>
-                    <div class="suggestion-levels">Levels: Beginner Intermediate</div>
-                    <div class="suggestion-languages">Languages: HTML CSS JavaScript PHP Python Ruby Java SQL</div>
-                    <div class="suggestions-subjects">Topics: </div>
-                </li>
-            </ul>
-        </li>
+                        <li class="filter-item list-group-item showing" id="Advanced">Advanced</li>
+                </ul>
+            </div>
+
+        </div>
 
 
-        <li class="category-item">
-            <div class="category-name">Online Courses</div>
-            <div class="category-desc">Would you like video lectures and problem sets? Some of these courses also have automatic graders so that you can tell if your code worked.</div>
-            <ul class="category-suggestions-list">
+            <div class="panel panel-primary">
+                <div class="category-item panel-heading">
+                    <div class="panel-heading">
+                        <div class="filter-name panel-title">Filter by Subject</div>
+                    </div>
+                </div>
+                <div class="panel-body">
+                    <ul class="filter-list list-group" id="Subject">
 
-                <li class="suggestion-item Beginner Intermediate Scratch C PHP JavaScript SQL CSS HTML Biology Crytography Finance Forensics Gaming">
-                    <div class="suggestion-name"><a href="https://www.edx.org/course/introduction-computer-science-harvardx-cs50x#!">Harvard's CS50</a></div>
-                    <div class="suggestion-desc">This is the intro computer science course, released as a MOOC.</div>
-                    <div class="suggestion-levels">Levels: Beginner Intermediate</div>
-                    <div class="suggestion-languages">Languages: Scratch C PHP JavaScript SQL CSS HTML</div>
-                    <div class="suggestions-subjects">Topics: Biology Crytography Finance Forensics Gaming</div>
-                </li>
-            </ul>
-        </li>
+                        <li class="filter-item list-group-item showing" id="Biology">Biology</li>
 
-    </ul>
+                        <li class="filter-item list-group-item showing" id="Crytography">Crytography</li>
+
+                        <li class="filter-item list-group-item showing" id="Finance">Finance</li>
+
+                        <li class="filter-item list-group-item showing" id="Forensics">Forensics</li>
+
+                        <li class="filter-item list-group-item showing" id="Gaming">Gaming</li>
+
+                        <li class="filter-item list-group-item showing" id="General">General</li>
+                </ul>
+            </div>
+
+        </div>
 
 
+            <div class="panel panel-primary">
+                <div class="category-item panel-heading">
+                    <div class="panel-heading">
+                        <div class="filter-name panel-title">Filter by Programming Language</div>
+                    </div>
+                </div>
+                <div class="panel-body">
+                    <ul class="filter-list list-group" id="ProgrammingLanguage">
+
+                        <li class="filter-item list-group-item showing" id="Any">Any</li>
+
+                        <li class="filter-item list-group-item showing" id="C">C</li>
+
+                        <li class="filter-item list-group-item showing" id="CSS">CSS</li>
+
+                        <li class="filter-item list-group-item showing" id="HTML">HTML</li>
+
+                        <li class="filter-item list-group-item showing" id="Java">Java</li>
+
+                        <li class="filter-item list-group-item showing" id="JavaScript">JavaScript</li>
+
+                        <li class="filter-item list-group-item showing" id="PHP">PHP</li>
+
+                        <li class="filter-item list-group-item showing" id="Python">Python</li>
+
+                        <li class="filter-item list-group-item showing" id="Ruby">Ruby</li>
+
+                        <li class="filter-item list-group-item showing" id="SQL">SQL</li>
+
+                        <li class="filter-item list-group-item showing" id="Scratch">Scratch</li>
+                </ul>
+            </div>
+
+        </div>
+
+        </div>
+
+    </div>
+
+
+        <div id="suggestions-list" class="col-sm-8 col-sm-pull-4">
+
+            <div class="panel panel-primary">
+                <div class="category-item panel-heading">
+                    <div class="panel-heading">
+                        <div class="category-name panel-title">Exercises/Games</div>
+                        <div class="category-desc">Want concrete goals and immediate feedback on whether you succeeded? Try these.</div>
+                    </div>
+                </div>
+                <div class="panel-body">
+                    <ul class="category-suggestions-list list-group">
+
+                    <li class="suggestion-item list-group-item Intermediate Advanced Any Biology">
+                        <div class="suggestion-name"><a href="http://rosalind.info/problems/tree-view/">Rosalind</a></div>
+                        <div class="suggestion-desc">These bioinformatics problems can be done in any programming language.</div>
+                        <div class="suggestion-levels">Levels: Intermediate Advanced</div>
+                        <div class="suggestion-languages">Languages: Any</div>
+                        <div class="suggestions-subjects">Topics: Biology</div>
+                    </li>
+
+                    <li class="suggestion-item list-group-item Beginner Intermediate HTML CSS JavaScript PHP Python Ruby Java SQL General">
+                        <div class="suggestion-name"><a href="https://www.codecademy.com/">Codecademy</a></div>
+                        <div class="suggestion-desc">These courses take you through the basics of a specific programming language or library.</div>
+                        <div class="suggestion-levels">Levels: Beginner Intermediate</div>
+                        <div class="suggestion-languages">Languages: HTML CSS JavaScript PHP Python Ruby Java SQL</div>
+                        <div class="suggestions-subjects">Topics: General</div>
+                    </li>
+                    </ul>
+                </div>
+            </div>
+
+
+            <div class="panel panel-primary">
+                <div class="category-item panel-heading">
+                    <div class="panel-heading">
+                        <div class="category-name panel-title">Online Courses</div>
+                        <div class="category-desc">Would you like video lectures and problem sets? Some of these courses also have automatic graders so that you can tell if your code worked.</div>
+                    </div>
+                </div>
+                <div class="panel-body">
+                    <ul class="category-suggestions-list list-group">
+
+                    <li class="suggestion-item list-group-item Beginner Intermediate Scratch C PHP JavaScript SQL CSS HTML Biology Crytography Finance Forensics Gaming">
+                        <div class="suggestion-name"><a href="https://www.edx.org/course/introduction-computer-science-harvardx-cs50x#!">Harvard's CS50</a></div>
+                        <div class="suggestion-desc">This is the intro computer science course, released as a MOOC.</div>
+                        <div class="suggestion-levels">Levels: Beginner Intermediate</div>
+                        <div class="suggestion-languages">Languages: Scratch C PHP JavaScript SQL CSS HTML</div>
+                        <div class="suggestions-subjects">Topics: Biology Crytography Finance Forensics Gaming</div>
+                    </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <script>
+        var filters = {
+            "DifficultyLevel": ['Beginner', 'Intermediate', 'Advanced'],
+            "Subject": ['Biology', 'Crytography', 'Finance', 'Forensics', 'Gaming', 'General'],
+            "ProgrammingLanguage": ['Any', 'C', 'CSS', 'HTML', 'Java', 'JavaScript', 'PHP', 'Python', 'Ruby', 'SQL', 'Scratch'],
+        };
+
+        function getCategory(filterItem) {
+            var parentElem = filterItem;
+            do {
+                parentElem = parentElem.parentElement;
+            }
+            while (parentElem.nodeName !== 'UL');
+
+            return parentElem.id;
+        }
+
+        function checkSuggestionVisibility(suggestion) {
+            var visible = false;
+            filterCategories = Object.keys(filters);
+            for (var catIndex = 0;
+                 catIndex < filterCategories.length;
+                 ++catIndex) {
+                visible = false;
+
+                var filterNames = filters[filterCategories[catIndex]];
+                for (var nameIndex = 0;
+                     nameIndex < filterNames.length;
+                     ++nameIndex) {
+                    var filterName = filterNames[nameIndex];
+                    if (suggestion.classList.contains(filterName)) {
+                        visible = true;
+                    }
+                }
+
+                // If any one category has no items that are in the
+                // class list, the item should not be visible. Stop
+                // checking.
+                if (visible === false) {
+                    suggestion.style.display = 'none';
+                    break;
+                }
+            }
+
+            if (visible === true) {
+                suggestion.style.display = 'block';
+            }
+        }
+
+        function refilter() {
+            var suggestions = document.getElementsByClassName(
+                'suggestion-item');
+
+            for (var suggIndex = 0;
+                 suggIndex < suggestions.length;
+                 ++suggIndex) {
+                var suggestion = suggestions[suggIndex];
+                checkSuggestionVisibility(suggestion);
+            }
+        }
+
+        function toggleFilter(filterItem) {
+            if (filterItem.classList.contains('filtering')) {
+                // switch to showing
+
+                filterItem.classList.add('showing');
+                filterItem.classList.remove('filtering');
+
+                // add this to the list of things that should be displayed
+                var category = getCategory(filterItem);
+                var filterName = filterItem.id;
+                filters[category].push(filterName);
+
+                // change what items are displayed
+                refilter();
+
+            } else {
+                // switch to filtering
+                // showing is the default; if there was a mistake and
+                // it has neither class, we can ignore that error
+
+                filterItem.classList.add('filtering');
+                filterItem.classList.remove('showing');
+
+                // remove this from the list of things that should
+                // be displayed
+                var category = getCategory(filterItem);
+                var categoryFilters = filters[category];
+                var filterName = filterItem.id;
+                var filterIndex = categoryFilters.indexOf(filterName);
+                while (filterIndex !== -1) {
+                    categoryFilters.splice(filterIndex, 1);
+                    filterIndex = categoryFilters.indexOf(filterName);
+                }
+
+                // change what items are displayed
+                refilter();
+            }
+        }
+
+        var filterItems = document.getElementsByClassName('filter-item');
+        for (var index = 0; index < filterItems.length; ++index) {
+            filterItems[index].addEventListener('click', function(event) {
+                toggleFilter(event.target);
+            });
+        }
+
+    </script>
 </body>
-
 </html>
