@@ -1,0 +1,11 @@
+        h1 {
+            text-align: center;
+        }
+        .showing {
+            color: #555;
+            font-style: normal;
+        }
+        .filtering {
+            color: #bbb;
+            font-style: italic;
+        }
