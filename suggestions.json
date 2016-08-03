@@ -4,6 +4,38 @@
     "Want concrete goals and immediate feedback on whether you succeeded? Try these.",
     [
       [
+        "Code.org",
+        "The Hour of Code activities involve a lot of short exercises for beginners. There are also a number of videos and ideas on more advanced topics.",
+        "https://code.org/learn",
+        "Beginner Intermediate",
+        "Scratch Blockly JavaScript",
+        "Drawing Animation Basics"
+      ],
+      [
+        "Code Combat",
+        "In this game, you program your characters and items to compete against the computer or against other players.",
+        "https://codecombat.com/",
+        "Intermediate Advanced",
+        "JavaScript Python Java",
+        "Gaming"
+      ],
+      [
+        "Khan Academy",
+        "The Computer Science track includes a combination of short exercises, short videos, and open-ended projects.",
+        "https://www.khanacademy.org/computing/computer-programming",
+        "Beginner Intermediate Advanced",
+        "JavaScript HTML CSS SQL",
+        "Drawing Animation WebDev Gaming Physics Basics"
+      ],
+      [
+        "Ruby Warrior",
+        "In this game, you program a character to complete levels of a turn-based dungeon crawl game.",
+        "https://www.bloc.io/ruby-warrior#/",
+        "Intermediate",
+        "Ruby",
+        "Gaming"
+      ],
+      [
         "Rosalind",
         "These bioinformatics problems can be done in any programming language.",
         "http://rosalind.info/problems/tree-view/",
@@ -11,13 +43,69 @@
         "Any",
         "Biology"
       ],
+      [
+        "Untrusted",
+        "In this game, you can edit only specific areas of code in order to get your character through mazes.",
+        "https://alexnisnevich.github.io/untrusted/",
+        "Intermediate",
+        "JavaScript",
+        "Gaming"
+      ],
+      [
+        "Project Euler",
+        "These challenging math problems require the speed and memory of a computer to solve. Many require you to use optimized numerical computation techniques.",
+        "https://projecteuler.net/",
+        "Intermediate Advanced",
+        "Any",
+        "Math Algorithms"
+      ],
       [ 
         "Codecademy",
         "These courses take you through the basics of a specific programming language or library.",
         "https://www.codecademy.com/", 
         "Beginner Intermediate",
         "HTML CSS JavaScript PHP Python Ruby Java SQL",
-        "General"
+        "WebDev Basics"
+      ],
+      [
+        "USA Computing Olympiad",
+        "Try the online training exercises used for programming competition participants.",
+        "http://www.usaco.org/",
+        "Intermediate Advanced",
+        "C++ Java Python Pascal C",
+        "Algorithms"
+      ],
+      [
+        "Hacker Rank",
+        "This site has a wide variety of problems with auto-graders in many programming languages.",
+        "https://www.hackerrank.com",
+        "Beginner Intermediate Advanced",
+        "Any SQL C++ Java Python Ruby",
+        "Basic Algorithms Math AI RegEx"
+      ],
+      [
+        "Regex Crossword",
+        "These puzzles will help you learn about regular expressions, one way that computers can recognize text.",
+        "https://regexcrossword.com/",
+        "Beginner Intermediate",
+        "Any",
+        "RegEx"
+      ],
+      [
+        "Lightbot",
+        "In this game, you program a robot to hop around through a maze.",
+        "https://lightbot.com/",
+        "Beginner",
+        "Custom",
+        "Basics"
+      ],
+      [
+        "Learn You a Node",
+        "This program takes you through a series of exercises covering the basics of the Node webserver.",
+        "https://github.com/workshopper/learnyounode",
+        "Advanced",
+        "JavaScript",
+        "WebDev"
       ]
     ]
   ],
@@ -31,7 +119,39 @@
         "https://www.edx.org/course/introduction-computer-science-harvardx-cs50x#!",
         "Beginner Intermediate",
         "Scratch C PHP JavaScript SQL CSS HTML",
-        "Biology Crytography Finance Forensics Gaming"
+        "Biology Crytography Finance Forensics Gaming Basics"
+      ],
+      [
+        "UC Berkeley's Beauty and Joy of Computing",
+        "Cal's intro computer science course, released as a MOOC.",
+        "https://www.edx.org/course/beauty-joy-computing-cs-principles-part-uc-berkeleyx-bjc-12x",
+        "Beginner Intermediate",
+        "Snap",
+        "Basics Algorithms"
+      ],
+      [
+        "Edx Computer Science Courses",
+        "Beyond the two above, there are a number of computer science courses on a variety of topics on the Edx platform.",
+        "https://www.edx.org/course/subject/computer-science",
+        "Beginnger Intermediate Advanced",
+        "Any Python Java",
+        "Basics Algorithms WebDev Math MachineLearning Statistics"
+      ],
+      [
+        "Coursera Computer Science Courses",
+        "Coursera has a variety of classes that explain how to apply computer science to various topics.",
+        "https://www.coursera.org/courses?languages=en&query=computer+science",
+        "Advanced",
+        "Any Python",
+        "Math Statistics Neuroscience Finance Graphics Robotics"
+      ],
+      [
+        "Udacity",
+        "Udacity's Computer Science courses focus on mobile development and machine learning.",
+        "https://www.udacity.com/courses/all",
+        "Advanced",
+        "Any Java JavaScript",
+        "Mobile MachineLearning Statistics"
       ]
     ]
   ]
