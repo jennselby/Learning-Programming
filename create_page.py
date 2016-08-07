@@ -5,11 +5,9 @@ import os.path
 CATEGORY_HTML = \
 '''
             <div class="panel panel-primary">
-                <div class="category-item panel-heading">
-                    <div class="panel-heading">
-                        <div class="category-name panel-title">{cat_name}</div>
-                        <div class="category-desc">{cat_desc}</div>
-                    </div>
+                <div class="panel-heading">
+                    <div class="category-name panel-title">{cat_name}</div>
+                    <div class="category-desc">{cat_desc}</div>
                 </div>
                 <div class="panel-body">
                     <ul class="category-suggestions-list list-group">
@@ -29,10 +27,8 @@ SUGGESTION_HTML = \
 FILTER_HEADER_HTML = \
 '''
             <div class="panel panel-primary">
-                <div class="category-item panel-heading">
-                    <div class="panel-heading">
-                        <div class="filter-name panel-title">Filter by {filter_heading}</div>
-                    </div>
+                <div class="panel-heading">
+                    <div class="filter-name panel-title">Filter by {filter_heading}</div>
                 </div>
                 <div class="panel-body">
                     <ul class="filter-list list-group" id="{filter_id}">
