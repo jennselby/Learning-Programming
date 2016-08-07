@@ -1,3 +1,4 @@
+import re
 import sys
 import json
 import os.path
@@ -5,11 +6,15 @@ import os.path
 CATEGORY_HTML = \
 '''
             <div class="panel panel-primary">
-                <div class="panel-heading">
+                <div class="panel-heading"
+                     data-toggle="collapse"
+                     data-target="#{cat_id}Body"
+                     aria-expanded="false"
+                     aria-controls="{cat_id}Body">
                     <div class="category-name panel-title">{cat_name}</div>
                     <div class="category-desc">{cat_desc}</div>
                 </div>
-                <div class="panel-body">
+                <div class="panel-body collapse" id="{cat_id}Body">
                     <ul class="category-suggestions-list list-group">
 '''
 
@@ -27,10 +32,14 @@ SUGGESTION_HTML = \
 FILTER_HEADER_HTML = \
 '''
             <div class="panel panel-primary">
-                <div class="panel-heading">
+                <div class="panel-heading"
+                     data-toggle="collapse"
+                     data-target="#{filter_id}Body"
+                     aria-expanded="false"
+                     aria-controls="{filter_id}Body">
                     <div class="filter-name panel-title">Filter by {filter_heading}</div>
                 </div>
-                <div class="panel-body">
+                <div class="panel-body collapse" id="{filter_id}Body">
                     <ul class="filter-list list-group" id="{filter_id}">
 '''
 
@@ -57,7 +66,10 @@ def create_html():
 
             suggestions_html += CATEGORY_HTML.format(
                                     cat_name=cat_name,
-                                    cat_desc=cat_desc)
+                                    cat_desc=cat_desc,
+                                    cat_id=re.sub(r'[^a-zA-Z]',
+                                                  '',
+                                                  cat_name))
 
 
             for suggestion in cat_suggestions:
