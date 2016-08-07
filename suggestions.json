@@ -1,4 +1,59 @@
 [
+  [ "Modifiable Examples",
+    "Want to learn how programs work by breaking them and figuring out how to fix them again? These are relatively simple pieces of code meant to illustrate particular ideas of Computer Science. (COMING SOON)",
+    [
+    ]
+  ],
+  [ "Online Programming Environments",
+    "Want to create your own project but not sure how to start? These sites let you code and see your program run without a lot of setup. Many also have documentation to explain how things work.",
+    [
+        [
+            "Khan Academy's Processing Environment",
+            "This is a good library for graphics and animations, and your code runs automatically as you write it, so you can see how it works.",
+            "http://ocw.mit.edu/courses/electrical-engineering-and-computer-science/",
+            "Beginner Intermediate",
+            "JavaScript",
+            "Gaming Animation Graphics"
+        ],
+        [
+            "Minecraft Redstone and Command Blocks",
+            "If you have a Minecraft account, try programming command blocks and making redstone circuits to automate elements in your world.",
+            "http://minecraft.gamepedia.com/Redstone_circuit",
+            "Beginner Intermediate Advanced",
+            "Any",
+            "Gaming"
+        ],
+        [
+            "Scratch",
+            "Scratch is a drag-and-drop programming language developed at MIT to teach computer science.",
+            "https://scratch.mit.edu/projects/editor/",
+            "Beginner Intermediate",
+            "Scratch",
+            "Animations Gaming"
+        ],
+        [
+            "App Inventor",
+            "App Inventor uses a Scratch-like language, but for mobile app development. If you have an Android phone, you can set it up to automatically run your app as you write it.",
+            "http://ai2.appinventor.mit.edu/",
+            "Beginner Intermediate",
+            "Scratch",
+            "Mobile"
+        ],
+        [
+            "JS Fiddle",
+            "This site makes it easy to test out your web development, with separate areas to write your HTML, CSS, and JavaScript.",
+            "https://jsfiddle.net/",
+            "Intermediate Advanced",
+            "HTML CSS JavaScript",
+            "WebDev"
+        ]
+    ]
+  ],
+  [ "Tutorials",
+    "Want to learn a specific library, idea, or language and then run with your own ideas? These explain how to write a full basic program, setting you up to make your own changes on top of it. (COMING SOON)",
+    [
+    ]
+  ],
   [
     "Exercises/Games",
     "Want concrete goals and immediate feedback on whether you succeeded? Try these.",
@@ -115,7 +170,7 @@
     [
       [
         "Harvard's CS50",
-        "This is the intro computer science course, released as a MOOC.",
+        "Harvard's intro computer science course, released as a MOOC.",
         "https://www.edx.org/course/introduction-computer-science-harvardx-cs50x#!",
         "Beginner Intermediate",
         "Scratch C PHP JavaScript SQL CSS HTML",
@@ -130,8 +185,24 @@
         "Basics Algorithms"
       ],
       [
+        "MIT's Intro to Computer Science and Programming Using Python",
+        "MIT's intro computer science course, released as a MOOC.",
+        "https://www.edx.org/course/introduction-computer-science-mitx-6-00-1x-8",
+        "Beginner Intermediate",
+        "Python",
+        "Basics Algorithms"
+      ],
+      [
+        "Stanford's Computer Science Courses",
+        "Stanford has made many of its classes available online, mostly through Coursera.",
+        "http://online.stanford.edu/courses/topic/4",
+        "Intermediate Advanced",
+        "Any",
+        "Basics Algorithms Math MachineLearning"
+      ],
+      [
         "Edx Computer Science Courses",
-        "Beyond the two above, there are a number of computer science courses on a variety of topics on the Edx platform.",
+        "Beyond the Edx classes above, there are a number of computer science courses on a variety of topics on the Edx platform.",
         "https://www.edx.org/course/subject/computer-science",
         "Beginnger Intermediate Advanced",
         "Any Python Java",
@@ -153,6 +224,28 @@
         "Any Java JavaScript",
         "Mobile MachineLearning Statistics"
       ]
+    ]
+  ],
+  [
+    "Online Coursework",
+    "Want to work through a regular college class? These don't always have the video lectures, but they do have all of the readings and homework assignments that you would do as a student at that institution.",
+    [
+        [
+            "Harvey Mudd's CS5",
+            "Harvey Mudd was a pioneer in computer science education, one of the first institutions to update their curriculum. This is now one of the most popular courses at the school.",
+            "https://www.cs.hmc.edu/twiki/bin/view/CS5",
+            "Beginner Intermediate",
+            "Python",
+            "Basics Algorithms Biology Cryptography Circuits Math"
+        ],
+        [
+            "MIT's Computer Science Classes",
+            "In addition to the classes released as MOOCs, MIT has publically released archives of many other courses.",
+            "http://ocw.mit.edu/courses/electrical-engineering-and-computer-science/",
+            "Beginner Intermediate Advanced",
+            "Python Java C++ Matlab Any",
+            "Basics Algorithms Cryptography Math Biology Physics Robotics Circuits"
+        ]
     ]
   ]
 ]
